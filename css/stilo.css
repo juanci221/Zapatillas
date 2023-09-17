@@ -1,0 +1,340 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  }
+body{
+background: #346c3e;
+margin: 0;  
+
+}
+
+
+.centro{
+    text-align: center;
+  }
+
+  .center {
+    text-align: center;
+  }
+  
+ 
+
+
+
+div.gallery {
+    border: 2px solid hwb(260 42% 57%);
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+  }
+  
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: 400px;
+   
+  }
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+
+
+
+
+.menu{
+width: 20%;
+float: left;
+border: 1px ;
+border-radius: 12px;
+}
+
+footer{
+text-align: center;
+padding: 3px;
+color: white;
+width: 100%;
+bottom: 0%;
+clear: both;
+padding-top: 20px;
+letter-spacing: 5px;
+
+}
+
+.header-titulo{
+text-align: center;
+font-weight: bold;
+padding: 40px;
+font-size: 40px;
+color: #fff;
+text-decoration: none;
+display: block;
+}
+
+.nav-bars{
+display: block;
+border: 1px ;
+}
+
+.nav-bars ul li a{
+display: block;
+color: #fff; 
+font-size: 16px;
+padding: 10px 8px;
+transition: 0.2s;
+margin: 20px;
+text-align: center;
+
+
+}
+ul{
+list-style: none;
+padding: 0;
+}
+li{
+text-decoration: none
+}
+a{
+text-decoration: none
+}
+
+.nav-menu-link:hover{
+font-size: 150%;
+color: #202788;
+}
+
+.bars{
+display: none;
+}
+
+
+
+.main {
+width: 80%;
+float: left;
+padding: 30px;
+background-color: white;
+}
+
+
+
+.articulos h2{
+font-size: 40px;
+text-align: center;
+margin: 40px;
+line-height: 1.2;
+color:  rgb(171 155 46) ;
+}
+
+
+
+.articulos p{
+line-height: 1.7;
+margin: 1em 0;
+font-size: 16px;
+color: black;
+}
+
+
+#lista-main{
+line-height: 1.8;
+margin: 1em 0;
+font-size: 16px;
+color: black;
+}
+
+#texto-imag{
+text-align: center;
+}
+
+.imag{
+margin-left: auto;
+margin-right: auto;
+height: auto;
+max-width: 100%;
+display: block;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+
+.menu{
+width: 100%;
+padding: 0 30px;
+}
+.main {
+
+width: 100%;
+margin: 6px 0;
+}
+.bars{
+display: block;
+cursor: pointer;
+}
+body{
+padding-top: 30px;
+}
+
+.bars .line{
+width: 30px;
+height: 3px;
+background-color: white;
+margin: 6px 8px;
+}
+.nav-bars{
+height: 0;
+position: absolute;
+left: 0;
+right: 0;
+width: 100vw;
+background-color: #36373a;
+overflow: hidden;
+overflow-y: auto;
+transition: top 0.4s;
+
+}
+.nav-bars a{
+background-color: #d7d23b;
+border-radius: 8px ;
+}
+
+.nav-bars.nav-menu-link{
+height: 550px;
+margin-top: 110px;
+
+
+}
+.nav-menu-link:hover{
+font-size: 100%;
+color: hsl(125, 62%, 33%);
+}
+
+.nav-bars ul{
+display: block;
+width: fit-content;
+margin: 15px auto 0 auto;
+text-align: center;
+padding: 10px 0;
+
+
+}
+
+.nav-bars.active{
+height: 450px;
+}
+.nav-bars.active ul{
+opacity: 1;
+
+}
+.nav-bars ul li a{
+margin-bottom: 20px;
+
+}
+.articulos h2{
+font-size: 28px;
+
+}
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+      }
+
+.main {
+width: 100%;
+}
+.menu{
+  width: 100%;
+  margin: 6px 0;
+}
+
+
+.bars{
+display: block;
+cursor: pointer;
+}
+
+.bars .line{
+width: 30px;
+height: 3px;
+background-color: white;
+margin: 6px 8px;
+}
+.nav-bars{
+height: 0;
+position: absolute;
+left: 0;
+right: 0;
+width: 100vw;
+background-color: #36373a;
+transition: 0.5s;
+overflow: hidden;
+overflow-y: auto;
+transition: top 0.4s;
+}
+
+.nav-bars.nav-menu-link{
+height: 550px;
+margin-top: 110px;
+
+
+}
+
+.nav-bars ul{
+display: block;
+width: fit-content;
+margin: 15px auto 0 auto;
+text-align: center;
+transition: 0.5s;
+padding: 10px 0;
+
+}
+
+.nav-bars.active{
+height: 450px;
+}
+.nav-bars.active ul{
+opacity: 1;
+
+}
+.nav-bars ul li a{
+margin-bottom: 20px;
+
+}
+.header-titulo{
+font-size: 35px;
+}
+.articulos h2{
+font-size: 28px;
+
+}
+
+}
