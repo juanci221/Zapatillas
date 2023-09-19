@@ -21,3 +21,9 @@ bars.onclick =function () {
 
   // Llama a la función para alternar el texto cada 3 segundos (3000 milisegundos)
   setInterval(alternarTexto, 3000);
+
+
+
+
+
+
